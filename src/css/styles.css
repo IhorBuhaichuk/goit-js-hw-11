@@ -1,16 +1,16 @@
 :root {
-  --primary-font: 'Montserrat', sans-serif;
+ --main-font: 'Montserrat', sans-serif;
   --primary-bg-color: #ffffff;
-  --secondary-bg-color: #f6f6fe;
-  --primary-text-color: #2e2f42;
+  --main-bg-color: #f6f6fe;
+ --secondary-bg-color: #2e2f42;
   --secondary-text-color: #ffffff;
   --tertiary-text-color: #808080;
-  --primary-accent-color: #4e75ff;
-  --primary-hover-accent-color: #6c8cff;
-  --primary-border-color: #808080;
-  --border-color-hover: #000000;
-  --button-disable-bg-color: #cfcfcf;
-  --button-text-disable: #989898;
+  --main-accent-color: #4e75ff;
+  --accent-hover-color: #6c8cff;
+  --main-border-color: #808080;
+  --border-hover-color: #000000;
+  --disabled-button-bg-color: #cfcfcf;
+  --disabled-button-text-color: #989898;
 }
 
 body {
@@ -68,24 +68,24 @@ button {
   width: 272px;
   height: 40px;
   border-radius: 4px;
-  border: 1px solid var(--primary-border-color);
+  border: 1px solid var(--main-border-color);
   transition: border-color 400ms cubic-bezier(0.4, 0, 0.2, 1);
   outline: none;
 }
 
 .search-input:hover {
-  border-color: var(--border-color-hover);
+  border-color: var(--border-hover-color);
 }
 
 .search-input:focus {
-  border: 1px solid var(--primary-accent-color);
+  border: 1px solid var(--main-accent-color);
 }
 
 .search-btn {
   padding: 8px 16px;
   border: 0;
   border-radius: 8px;
-  background: var(--primary-accent-color);
+  background: var(--main-accent-color);
   color: var(--secondary-text-color);
   font-size: 16px;
   font-weight: 500;
@@ -94,7 +94,7 @@ button {
 }
 
 .search-btn:hover {
-  background-color: var(--primary-hover-accent-color);
+  background-color: var(--accent-hover-color);
 }
 
 /* Main */
@@ -111,7 +111,7 @@ button {
 }
 
 .card {
-  border: 1px solid var(--primary-border-color);
+  border: 1px solid var(--main-border-color);
   border-radius: 10px;
   overflow: hidden;
   transition: transform 400ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -161,7 +161,7 @@ button {
   display: block;
   margin: 15px auto;
   position: relative;
-  color: var(--primary-accent-color);
+  color: var(--main-accent-color);
   box-sizing: border-box;
   animation: animloader 2s linear infinite;
 }
